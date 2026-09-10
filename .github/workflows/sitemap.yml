@@ -1,8 +1,8 @@
-name: Gerar Sitemap
+name: Geração de Arquivo
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 permissions:
@@ -39,5 +39,5 @@ jobs:
       - name: Commit and Push sitemap.xml
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "Tarefa: atualização semanal no sitemap.xml e llm.txt [CI/CD]"
+          commit_message: "Tarefa: atualização mensal no sitemap.xml e llm.txt [CI/CD]"
           file_pattern: "my-portfolio/public/sitemap.xml"

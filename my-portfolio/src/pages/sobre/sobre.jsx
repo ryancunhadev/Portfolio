@@ -8,7 +8,10 @@ export default function Sobre() {
                 <img loading="lazy" fetchPriority="auto" height="192" width="192" src="https://github.com/ryancunhha.png?size=40" alt="Foto de Perfil GitHub de Ryan Cunha" className="w-40 h-40 rounded-xl" />
 
                 <div className="flex flex-col items-center md:items-start justify-center flex-1 gap-5 w-full text-center md:text-left">
-                    <h2 className="text-2xl font-bold text-white tracking-tight">Ryan Cunha</h2>
+                    <div>
+                        <h2 className="text-2xl font-bold text-white tracking-tight">Ryan Cunha</h2>
+                        <p className="text-[#8B8B94] text-sm mt-0.5">Desenvolvedor Full Stack</p>
+                    </div>
 
                     <div className="flex flex-wrap justify-center md:justify-start gap-3 w-full">
                         {redes?.map((rede, index) => (

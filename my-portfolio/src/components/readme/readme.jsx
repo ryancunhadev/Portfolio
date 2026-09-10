@@ -146,6 +146,10 @@ export default function ReadmeConteudo({ usuario = "ryancunhha", repositorio = "
         [&_h3]:leading-tight
         [&_strong]:font-bold 
         [&_em]:italic
+        [&_mark]:bg-yellow-200 
+        [&_mark]:text-black 
+        [&_mark]:px-1 
+        [&_mark]:rounded
         [&_pre]:bg-neutral-800 
         [&_pre]:text-white
         [&_pre]:p-4 
