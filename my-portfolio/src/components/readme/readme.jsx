@@ -3,7 +3,7 @@ import { marked } from "marked";
 import DOMPurify from "dompurify";
 import { obterReadmeDoProjeto } from "../../services/repoGitHub";
 
-export default function ReadmeConteudo({ usuario = "ryancunhha", repositorio = "", branch = "main" }) {
+export default function ReadmeConteudo({ usuario = "", repositorio = "", branch = "main" }) {
     const contentRef = useRef(null);
     const [markdown, setMarkdown] = useState("");
     const [carregando, setCarregando] = useState(true);

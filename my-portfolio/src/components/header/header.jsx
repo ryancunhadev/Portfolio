@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Dropdown from "../dropdown/dropdown";
-import { rotasMenu, redes } from "../../config/config";
+import { rotasMenu, redes, usernameGithub } from "../../config/config";
 
 export default function MenuHamburguer() {
     const ultimoScroll = useRef(0);
@@ -60,7 +60,7 @@ export default function MenuHamburguer() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                    <img loading="eager" fetchPriority="high" className="w-9 h-9 rounded-full" src="https://github.com/ryancunhha.png?size=40" alt="Perfil GitHub" />
+                    <img loading="eager" fetchPriority="high" className="w-9 h-9 rounded-full" src={`https://github.com/${usernameGithub}.png?size=10`} alt="Perfil GitHub" />
                     <p className="text-white font-semibold hidden md:block">
                         Ryan Cunha <span>Dev<span className="animate-[pulse_0.8s_steps(1,start)_infinite] text-green-800 select-none">_</span></span>
                     </p>

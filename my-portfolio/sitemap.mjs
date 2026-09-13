@@ -1,5 +1,5 @@
 import fs from "fs";
-import { rotasMenu } from "./src/config/rotas.js";
+import { rotasMenu, redes } from "./src/config/rotas.js";
 
 async function generateSitemap() {
     const Rotas = rotasMenu.map(rota => rota.path === "/" ? "" : rota.path);
@@ -44,11 +44,17 @@ async function generateLLM() {
 - Página do projeto: https://ryancunha.vercel.app/projetos/${repo.id}
 `).join("\n");
 
+        const rede = redes.map(rede => `- ${rede.label}: ${rede.url}`).join("\n")
+
         const paginas = rotasMenu.map(rota => `- [${rota.nome}](https://ryancunha.vercel.app${rota.path})`).join("\n")
 
-        const llmTXT = `# Ryan Cunha
+        const llmTXT = `# Portfólio - Ryan Cunha
         
 > Portfólio pessoal de Ryan Cunha, desenvolvedor de Web Full-Stack, apresenta projetos, experiências, habilidades técnicas e tecnologias utilizadas no desenvolvimento em diversas áreas.
+
+## Rede Socias
+
+${rede}
 
 ## Páginas principais do portfólio
 

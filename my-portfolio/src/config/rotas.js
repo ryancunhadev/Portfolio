@@ -1,3 +1,11 @@
+const usernameGithub = "ryancunhadev"
+
+const redes = [
+    { label: "Twitter / X", url: "https://x.com/ryancunhadev", icon: "https://img.icons8.com/ios-filled/50/FFFFFF/twitterx--v1.png" },
+    { label: "GitHub", url: `https://github.com/${usernameGithub}`, icon: "https://img.icons8.com/ios-filled/50/FFFFFF/github.png" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/ryancunhadev", icon: "https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" },
+]
+
 const rotasMenu = [
     { nome: "Início", path: "/", description: "Portfólio de Ryan Cunha, Desenvolvedor Full Stack." },
     { nome: "Projetos", path: "/projetos", description: "Confira os projetos desenvolvidos por Ryan Cunha." },
@@ -6,8 +14,8 @@ const rotasMenu = [
 ]
 
 const ignorarRepo = [
-    "ryancunhha",
+    usernameGithub,
     "Portfolio"
 ] || []
 
-export { rotasMenu, ignorarRepo }
+export { rotasMenu, ignorarRepo, usernameGithub, redes }

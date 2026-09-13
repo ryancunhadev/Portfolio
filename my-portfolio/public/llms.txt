@@ -2,6 +2,12 @@
         
 > Portfólio pessoal de Ryan Cunha, desenvolvedor de Web Full-Stack, apresenta projetos, experiências, habilidades técnicas e tecnologias utilizadas no desenvolvimento em diversas áreas.
 
+## Rede Socias
+
+- Twitter / X: https://x.com/ryancunhadev
+- GitHub: https://github.com/ryancunhadev
+- LinkedIn: https://www.linkedin.com/in/ryancunhadev
+
 ## Páginas principais do portfólio
 
 - [Início](https://ryancunha.vercel.app/)
@@ -99,12 +105,12 @@
 - Link do repositório no GitHub: https://github.com/estudos-ryan/app-notas
 - Página do projeto: https://ryancunha.vercel.app/projetos/1159582389
 
-### EncurtadorLocal 
+### EncurtadorLink 
 
 - Linguagem: JavaScript
 - Descrição: Encurtador de Links com Temporarizador
 - Topicos: api, express-js
-- Link do repositório no GitHub: https://github.com/estudos-ryan/EncurtadorLocal
+- Link do repositório no GitHub: https://github.com/estudos-ryan/EncurtadorLink
 - Página do projeto: https://ryancunha.vercel.app/projetos/1300992462
 
 ### LocalTempMail 
@@ -126,8 +132,8 @@
 ### MP3Player 
 
 - Linguagem: Java
-- Descrição: MP3 Player criado com Java
-- Topicos: java, javafx
+- Descrição: MP3 Player criado com JavaFX
+- Topicos: java, javafx, maven
 - Link do repositório no GitHub: https://github.com/estudos-ryan/MP3Player
 - Página do projeto: https://ryancunha.vercel.app/projetos/1304590505
 

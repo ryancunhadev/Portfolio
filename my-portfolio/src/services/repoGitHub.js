@@ -1,4 +1,4 @@
-import { ignorarRepo } from "../config/config";
+import { ignorarRepo, usernameGithub } from "../config/config";
 import { formatarTempoAtras } from "./repoUtils";
 
 const CACHE_KEY_PESSOAL = "repos_cache_pessoal";
@@ -16,7 +16,7 @@ export async function obterProjetosGithubPessoal(signal) {
 
         if (cache && tempo && (agora - Number(tempo) < 3600000)) return JSON.parse(cache);
 
-        const responsePerfil = await fetch("https://api.github.com/users/ryancunhha/repos?sort=pushed&per_page=6", { signal });
+        const responsePerfil = await fetch(`https://api.github.com/users/${usernameGithub}/repos?sort=pushed&per_page=6`, { signal });
 
         if (!responsePerfil.ok) throw new Error(`Erro na API Github: ${responsePerfil.status}`);
 
@@ -140,7 +140,7 @@ export async function obterUnicoProjeto(idRepo, signal) {
 }
 
 export async function obterReadmeDoProjeto(idProjeto, signal) {
-    const donos = ["estudos-ryan", "ryancunhha"];
+    const donos = [usernameGithub, "estudos-ryan"];
 
     try {
         for (const dono of donos) {
